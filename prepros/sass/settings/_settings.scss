@@ -1,0 +1,50 @@
+/************************************************************/
+/************************* Settings *************************/
+/************************************************************/
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin:     0;
+    padding:    0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size:  62.5%;
+}
+
+body {    
+    background: url('../img/jpg/hero-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    position:         relative;
+    font-family:      Arial, Helvetica, sans-serif;
+    font-size:        1.6rem;
+    font-weight:      400;
+    line-height:      2;
+    overflow-x:       hidden; /* Activate for porduction */
+}
+
+// body::-webkit-scrollbar {
+//     background-color: var(--main-gray);
+//     width:            1.2rem;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//     background-color: var(--main-yellow);
+//     border-radius:    1rem;
+// }
+
+// body::-webkit-scrollbar-thumb:hover {
+//     background-color: var(--main-red);
+//     border-radius:    1rem;
+// }
+
+// header,
+// main,
+// section {
+//     overflow-x: hidden;
+// }

@@ -1,0 +1,221 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- Fontawesome
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css", integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==", crossorigin="anonymous", referrerpolicy="no-referrer")
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/styles.css")
+        title Bukawi
+    body 
+        nav.mobile-nav
+            ul.mobile-nav__menu
+                i.fa-solid.fa-xmark.menu-close
+                li: a(href="#") Inicio
+                li: a(href="#") Productos
+                li: a(href="#") Contacto
+                li: a(href="#") Nosotros
+                li: a(href="#") Testimonios
+        nav.main-nav 
+            .main-nav__logo
+                img(src="img/svg/logo.svg", alt="Bukawi Logo")
+            .main-nav__menu
+                ul.show-menu 
+                    li: a(href="#") Inicio
+                    li: a(href="#") Productos
+                    li: a(href="#") Contacto
+                    li.menu
+                        i.fa-solid.fa-bars.menu-open
+                        ul.hidden-menu
+                            li: a(href="#") Nosotros
+                            li: a(href="#") Testimonios
+        header 
+            .header__container 
+                .header__image
+                    img(src="img/svg/logo.svg", alt="Bukawi Logo")
+                .header__budget
+                    h3 Calcula tu presupuesto aproximado
+                    p Tenemos las mejores soluciones para tu ahorro
+                    a(href="#")
+                        button Ver presupuesto
+
+        main#index
+            section(style="top: -15rem;").section-index.section-index--odd
+                .section-index__container
+                    .testimonials 
+                        .testimonials__container
+                            .testimonial__container
+                                .testimonial
+                                    .testimonial__info
+                                        .testimonial__image
+                                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Testimonial")
+                                        .testimonial__text
+                                            .testimonial__stars
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga.
+                                    .testimonial__name
+                                        h3 Maria Lopez Lopez
+                            .testimonial__container
+                                .testimonial
+                                    .testimonial__info
+                                        .testimonial__image
+                                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Testimonial")
+                                        .testimonial__text
+                                            .testimonial__stars
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star
+                                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga.
+                                    .testimonial__name
+                                        h3 Juan Luis Perez Perez
+                            .testimonial__container
+                                .testimonial
+                                    .testimonial__info
+                                        .testimonial__image
+                                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Testimonial")
+                                        .testimonial__text
+                                            .testimonial__stars
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star
+                                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga.
+                                    .testimonial__name
+                                        h3 Laura Perez Perez
+                            .testimonial__container
+                                .testimonial
+                                    .testimonial__info
+                                        .testimonial__image
+                                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Testimonial")
+                                        .testimonial__text
+                                            .testimonial__stars
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star
+                                                i.fa-solid.fa-star
+                                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga.
+                                    .testimonial__name
+                                        h3 Arturo Perez Perez
+                            .testimonial__container
+                                .testimonial
+                                    .testimonial__info
+                                        .testimonial__image
+                                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Testimonial")
+                                        .testimonial__text
+                                            .testimonial__stars
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                                i.fa-solid.fa-star.star
+                                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus quis ea quaerat iste excepturi eligendi at beatae autem, rerum voluptatibus magni sunt perferendis necessitatibus, laudantium rem, tenetur temporibus fuga.
+                                    .testimonial__name
+                                        h3 Pedro Sanchez Sanchez
+
+            section(style="top: 70rem;").section-index.section-index--even
+                .section-index__container
+                    .products
+                        .product__container 
+                            .product__image 
+                                img(src="img/jpeg/WhatsApp Image 2022-06-21 at 5.12.27 PM(1).jpeg", alt="Bukawi Product")
+                            .product__name
+                                h3 
+                                    a(href="https://www.logosinstitute.com.mx") Calentador Modelo 1
+                        .product__container 
+                            .product__image 
+                                img(src="img/jpeg/WhatsApp Image 2022-06-21 at 5.12.36 PM.jpeg", alt="Bukawi Product")
+                            .product__name
+                                h3 
+                                    a(href="https://www.logosinstitute.com.mx") Calentador Modelo 1
+                        .product__container 
+                            .product__image 
+                                img(src="img/jpeg/galery2.jpeg", alt="Bukawi Product")
+                            .product__name
+                                h3 
+                                    a(href="https://www.logosinstitute.com.mx") Calentador Modelo 1
+                        .product__container 
+                            .product__image 
+                                img(src="img/jpeg/galery1.jpeg", alt="Bukawi Product")
+                            .product__name
+                                h3 
+                                    a(href="https://www.logosinstitute.com.mx") Calentador Modelo 1
+                        .product__container 
+                            .product__image 
+                                img(src="img/jpeg/WhatsApp Image 2022-06-21 at 5.12.27 PM(1).jpeg", alt="Bukawi Product")
+                            .product__name
+                                h3 
+                                    a(href="https://www.logosinstitute.com.mx") Calentador Modelo 1
+                        .product__container 
+                            .product__image 
+                                img(src="img/jpeg/WhatsApp Image 2022-06-21 at 5.12.36 PM(1).jpeg", alt="Bukawi Product")
+                            .product__name
+                                h3 
+                                    a(href="https://www.logosinstitute.com.mx") Calentador Modelo 1
+
+            section(style="top: 155rem;").section-index.section-index--odd
+                .section-index__container
+                    .home-text-light
+                        .home-text__image
+                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Image Presentation")
+                        .home-text__text
+                            h3 Texto de inicio que muestra imagen
+                            a(href="#") 
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium libero quas mollitia assumenda veritatis molestias ea vel ratione, dignis...
+                            .home-text__button 
+                                a(href="#")
+                                    button Ver más 
+            section(style="top: 240rem;").section-index.section-index--even
+                .section-index__container
+                    .home-text-dark
+                        .home-text__image
+                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Image Presentation")
+                        .home-text__text
+                            h3 Texto de inicio que muestra imagen
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium libero quas mollitia assumenda veritatis molestias ea vel.
+                            .home-text__button 
+                                a(href="#")
+                                    button Ver más 
+
+
+
+            section(style="top: 325rem;").section-index.section-index--odd
+                .section-index__container
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium libero quas mollitia assumenda veritatis molestias ea vel ratione, dignissimos nisi nobis et unde odio harum rerum aliquam earum iste.
+        footer(style="top: 500rem;").footer.footer-top--left
+            .footer__container
+                .footer__head 
+                    h3 No lo pienses más, tenemos una solución para ti
+                .footer__social
+                    ul.footer__social-list
+                        li
+                            a(href="#"): i.fa-brands.fa-facebook
+                        li
+                            a(href="#"): i.fa-brands.fa-instagram
+                        li
+                            a(href="#"): i.fa-brands.fa-tiktok
+                    .footer__social-info
+                        .footer__social-aux
+
+                        p.footer__social-text.footer-active Síguenos en nuestras redes sociales
+                        p.footer__social-text Texto de facebook Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ratione est possimus quasi voluptate.
+                        p.footer__social-text Texto de instagram Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ratione est possimus quasi voluptate.
+                        p.footer__social-text Texto de tiktok Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ratione est possimus quasi voluptate.
+
+                .footer__end
+                    span Bukawi 2022 
+                    span  - 
+                    span Todos los derechos reservados
+        script(src="js/app_scroll.js")
+        script(src="js/app_menu.js")
+        script(src="js/app_testimonials.js")
+        script(src="js/app_footer.js")

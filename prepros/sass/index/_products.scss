@@ -1,0 +1,85 @@
+.products {
+    align-items:     center;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+    width:           min(100%, 150rem);
+
+    .product__container:hover {
+        box-shadow: 0 0 1rem var(--main-white);
+
+        .product__name {
+            top: 0;
+        }
+    }
+
+    .product__container {
+        height:     30rem;
+        margin:     0.2rem;
+        overflow:   hidden;
+        position:   relative;
+        transition: all ease-in-out 0.6s;
+        width:      30%;
+
+        .product__image {
+            background-color: var(--body-background);
+            height:           100%;
+            left:             0;
+            position:         absolute;
+            top:              0;
+            width:            100%;
+            z-index:          1;
+
+            img {
+                height:     100%;
+                object-fit: cover;
+                width:      100%;
+            }
+        }
+        
+        .product__name {
+            background-color:           var(--gray-transparent);
+            backdrop-filter:            blur(20px);
+            height:                     100%;
+            left:                       0;
+            position:                   absolute;
+            top:                        100%;
+            transition: all ease-in-out 0.6s;
+            width:                      100%;
+            z-index:                    2;
+
+            h3 {
+                align-items:     center;
+                display:         flex;
+                height:          100%;
+                justify-content: center;
+                
+                a {
+                    color:           var(--main-white);
+                    font-size:       2.4rem;
+                    padding:         0.4rem;
+                    text-align:      center;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .products {
+        align-items: center;
+        display:     flex;
+        flex-wrap:   wrap;
+        width:       100%;
+    
+        .product__container:nth-child(5), .product__container:nth-child(6) {
+            display: none;
+        }
+
+        .product__container {
+            height: 16rem;
+            width:  80%;
+        }
+    }
+}

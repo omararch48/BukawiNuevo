@@ -1,0 +1,53 @@
+/*************************************************************************/
+/******************************  Variables  ******************************/
+/*************************************************************************/
+
+:root {
+    /* Main colors */
+    --body-background:  #e4dcdc;
+    --main-white:       #ffffff;
+    --main-gray:        #dad1d1;
+    --main-background:  #424546;
+    --main-black:       #000000;
+    --main-yellow:      #F39F18;
+    --main-red:         #E62E1B;
+    --main-light-blue:  #0098DA;
+    --main-dark-blue:   #000066;
+    --main-pink:        #f83073;
+    --main-light-green: #009933;
+    --main-dark-green:  #006633;
+    --form-light:       #537958;
+    // transparent
+    --black-transparent:       rgba(0, 0, 0, 0.4);
+    --black-transparent-dark:  rgba(0, 0, 0, 0.6);
+    --white-transparent:       rgba(255, 255, 255, 0.1);
+    --gray-transparent:        rgba(218, 209, 209, 0.4);
+    --dark-blue-transparent:   rgba(0, 0, 102, 0.4);
+    --dark-green-transparent:  rgba(0, 102, 51, 0.4);
+    --yellow-transparent:      rgba(243, 159, 24, 0.4);
+    --dark-yellow-transparent: rgba(243, 159, 24, 0.64);
+
+    /* Social colors */
+    --facebook-color:   #1877f2;
+    --instragram-color: #dd2a7b;
+    --whatsapp-color:   #25D366;
+    --twitter-color:    #1DA1F2;
+    --linkedin-color:   #0e76a8;
+    --pinterest-color:  #c8232c;
+    --youtube-color:    #c4302b;
+    --tiktok-color:     #69c9d0;
+    /* Box colors */
+    --box-black:      #3e3f46;
+    --box-black-top:  #35383e;
+    --box-black-side: #2e3133;
+    --box-blue:       #33a3ee;
+    --box-blue-top:   #2982b9;
+    --box-blue-side:  #1f5378;
+    --box-green-top:  #006633;
+    --box-green-side: #01381d;
+    /* Base colors */
+    --base-1: #DFF6FF;
+    --base-2: #47B5FF;
+    --base-3: #256D85;
+    --base-4: #06283D;    
+}
