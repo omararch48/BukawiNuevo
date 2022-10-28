@@ -2,21 +2,21 @@ mixin Menu()
     nav.mobile-nav
         ul.mobile-nav__menu
             i.fa-solid.fa-xmark.menu-close
-            li: a(href="#") Inicio
-            li: a(href="#") Productos
-            li: a(href="#") Contacto
-            li: a(href="#") Nosotros
-            li: a(href="#") Testimonios
+            li: a(href="index.html") Inicio
+            li: a(href="products.html") Productos
+            li: a(href="contact.html") Contacto
+            li: a(href="us.html") Nosotros
+            li: a(href="testimonials.html") Testimonios
     nav.main-nav 
         .main-nav__logo
             img(src="img/svg/logo.svg", alt="Bukawi Logo")
         .main-nav__menu
             ul.show-menu 
-                li: a(href="#") Inicio
-                li: a(href="#") Productos
-                li: a(href="#") Contacto
+                li: a(href="index.html") Inicio
+                li: a(href="products.html") Productos
+                li: a(href="contact.html") Contacto
                 li.menu
                     i.fa-solid.fa-bars.menu-open
                     ul.hidden-menu
-                        li: a(href="#") Nosotros
-                        li: a(href="#") Testimonios
+                        li: a(href="us.html") Nosotros
+                        li: a(href="testimonials.html") Testimonios
