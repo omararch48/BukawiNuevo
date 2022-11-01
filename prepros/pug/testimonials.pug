@@ -2,12 +2,16 @@ extend templates/base.pug
 
 
 block Title 
-    +Title("Productos")
+    +Title("Testimonios")
 
 
 block Main
-    main#products
-
+    main#testimonials
+        section.top.light
+        section.section-testimonials
+        section.section-testimonials
+        section.section-testimonials
+        section.bottom.light
 
 block Footer                
-    +Footer()
+    +Footer("")(class="footer-top--left dark")

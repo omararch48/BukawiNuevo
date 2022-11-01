@@ -1,5 +1,5 @@
-mixin Footer(title)
-    footer(style="top: 500rem;").footer.footer-top--left
+mixin Footer(top)
+    footer(class!=attributes.class, style!=top).footer
         .footer__container
             .footer__head 
                 h3 No lo pienses más, tenemos una solución para ti

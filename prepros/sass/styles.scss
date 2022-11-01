@@ -3,6 +3,8 @@
 @import 'index/section';
 // Footer
 @import 'footer/footer';
+@import 'footer/footer_dark';
+@import 'footer/footer_light';
 // Index
 @import 'index/header';
 @import 'index/testimonials';
@@ -11,3 +13,5 @@
 @import 'index/slider';
 // Menu
 @import 'menu/menu';
+// Components
+@import 'components/borders';

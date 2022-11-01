@@ -27,4 +27,11 @@ export const appMenu = () => {
             menuMobile.classList.remove('active');
         }
     });
+    
+    
+    document.addEventListener('keydown', ({key}) => {
+        if (key === 'Escape' && menuMobile.classList.contains('active')) {            
+            menuMobile.classList.remove('active');
+        }
+    });
 };
