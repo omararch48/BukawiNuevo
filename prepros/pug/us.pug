@@ -7,11 +7,31 @@ block Title
 
 block Main
     main#us
-        section.top.dark
+        +MainTitle("Nosotros")
+        section.top.right.dark
         section.section-us
+            div(style="background: url('img/jpeg/WhatsApp Image 2022-06-21 at 5.12.27 PM(2).jpeg') no-repeat center center / cover;").section-us__container
+                .section-us__slider.right
+                    .section-us__title.bg-dark-blue
+                        h2 Mision
+                    .section-us__text.bg-green
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero minus voluptate reprehenderit nobis accusamus molestias id quaerat unde suscipit. Recusandae quidem ipsam exercitationem in consectetur facilis. Quas, eius! Rem.
         section.section-us
+            div(style="background: url('img/jpeg/WhatsApp Image 2022-06-21 at 5.12.26 PM.jpeg') no-repeat center center / cover;").section-us__container
+                .section-us__slider.left
+                    .section-us__title.bg-dark-green
+                        h2 Vision
+                    .section-us__text.bg-blue
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero minus voluptate reprehenderit nobis accusamus molestias id quaerat unde suscipit. Recusandae quidem ipsam exercitationem in consectetur facilis. Quas, eius! Rem.
         section.section-us
-        section.bottom.dark
+            div(style="background: url('img/jpeg/WhatsApp Image 2022-06-21 at 5.12.36 PM.jpeg') no-repeat center center / cover;").section-us__container
+                .section-us__slider.right
+                    .section-us__title.bg-red
+                        h2 Objetivo
+                    .section-us__text.bg-dark-yellow
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero minus voluptate reprehenderit nobis accusamus molestias id quaerat unde suscipit. Recusandae quidem ipsam exercitationem in consectetur facilis. Quas, eius! Rem.
+        section.bottom.right.dark
+
 
 block Footer                
     +Footer("")(class="footer-top--right light")

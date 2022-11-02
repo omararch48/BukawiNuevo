@@ -6,12 +6,143 @@ block Title
 
 
 block Main
-    main#us
-        section.top.light
-        section.section-contact
-        section.section-contact
-        section.section-contact
-        section.bottom.light
+    main#contact
+        +MainTitle("Contacto")
+        section.top.left.light
+
+
+        section.contact-section
+            h3 Envíanos un mensaje
+            form(data-aos="zoom-out-down").form
+                .form__container
+                    .form-legend-container
+                        legend.form-legend Los campos con * son opcionales
+                    .form__group
+                        input(type="text" id="name", placeholder=" ").form__input
+                        label(for="name").form__label Nombre:
+                        span.form__line
+                    .form__group
+                        input(type="email", id="email", placeholder=" ").form__input
+                        label(for="email").form__label Correo electrónico:
+                        span.form__line
+                    .form__group
+                        input(type="tel", id="telephone", placeholder=" ").form__input
+                        label(for="telephone").form__label Teléfono*:
+                        span.form__line
+                    .form__group
+                        textarea(name="info", id="info", rows="5", placeholder=" ").textarea-form
+                        label(for="info").form__label Mensaje*:                    
+                button.submit-form.color-white.color-gray-hover Enviar
+        section.contact-section
+            h3 Contactanos por redes sociales
+            .social-section
+            .cards
+
+
+                div(data-aos="flip-left", data-aos-once="true").flip-card
+                    .instagram-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-instagram
+                        .flip-card-back
+                            h3 Instagram
+                            p Visitanos en Instagram
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
+
+                
+                <div class="flip-card" data-aos="flip-right" data-aos-once="true">
+                    <div class="linkedin-background border-radius-2rem flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Linkedin</h3>
+                            <p>
+                                Visitanos en Linkedin
+                            </p>
+                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-aos="flip-left" data-aos-once="true">
+                    <div class="tiktok-background border-radius-2rem flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Tik tok</h3>
+                            <p>
+                                Ve nuestros bailes en Tiktok
+                            </p>
+                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-aos="flip-right" data-aos-once="true">
+                    <div class="twitter-background border-radius-2rem flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Twitter</h3>
+                            <p>
+                                Siguenos en Twitter
+                            </p>
+                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" data-aos="flip-left" data-aos-once="true">
+                    <div class="pinterest-background border-radius-2rem flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Pinterest</h3>
+                            <p>
+                                No sabemos que es pinterest, pero siguenos
+                            </p>
+                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card"  data-aos="flip-right" data-aos-once="true">
+                    <div class="facebook-background border-radius-2rem flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Facebook</h3>
+                            <p>
+                                Unete a nuestro grupo de Facebook
+                            </p>
+                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card"  data-aos="flip-left" data-aos-once="true">
+                    <div class="whatsapp-background border-radius-2rem flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>WhatsApp</h3>
+                            <p>
+                                Envianos un mensaje por WhatsApp
+                            </p>
+                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+        section.bottom.left.light
 
 block Footer                
     +Footer("")(class="footer-top--left dark")

@@ -1,0 +1,181 @@
+/*************************************************************/
+/************************* Utilities *************************/
+/*************************************************************/
+
+.background-1 {
+    background-color: rgba(0, 0, 102, 0.8);
+}
+
+.background-2 {
+    background-color: rgba(0, 102, 51, 0.8);
+}
+
+.background-3 {
+    background-color: rgba(230, 46, 25, 0.8);
+}
+
+.background-4 {
+    background-color: rgba(0, 153, 51, 0.8);
+}
+
+.background-5 {
+    background-color: rgba(0, 152, 218, 0.8);
+}
+
+.background-6 {
+    background-color: rgba(243, 159, 24, 0.8);
+}
+
+.border-radius-2rem {
+    border-radius: 2rem;
+}
+
+.center-flex {
+    align-items:     center;
+    display:         flex;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.clear-link {
+    text-decoration: none;
+}
+
+.color-white {
+    color: var(--main-white);
+}
+
+.color-red {
+    color: var(--main-red);
+}
+
+.color-dark-green {
+    color: var(--main-dark-green);
+}
+
+.color-dark-blue {
+    color: var(--main-dark-blue);
+}
+
+.color-gray-hover:hover {
+    color: var(--main-gray);
+}
+
+.facebook-background {
+    background-color: var(--facebook-color)
+}
+
+.instagram-background {
+    background-color: var(--instragram-color)
+}
+
+.whatsapp-background {
+    background-color: var(--whatsapp-color)
+}
+
+.twitter-background {
+    background-color: var(--twitter-color)
+}
+
+.linkedin-background {
+    background-color: var(--linkedin-color)
+}
+
+.pinterest-background {
+    background-color: var(--pinterest-color)
+}
+
+.youtube-background {
+    background-color: var(--youtube-color)
+}
+
+.tiktok-background {
+    background-color: var(--tiktok-color)
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.font-size-3rem {
+    font-size: 3rem;
+}
+
+.font-size-l {
+    font-size: var(--size-l);
+}
+
+.font-size-ll {
+    font-size: var(--size-ll);
+}
+
+.font-size-lll {
+    font-size: var(--size-lll);
+}
+
+.font-size-llll {
+    font-size: var(--size-llll);
+}
+
+.font-size-lllll {
+    font-size: var(--size-lllll);
+}
+
+.font-size-llllll {
+    font-size: var(--size-llllll);
+}
+
+@media (max-width: 800px) {
+    .font-size-l {
+        font-size: var(--size-ll);
+    }
+    
+    .font-size-ll {
+        font-size: var(--size-lll);
+    }
+    
+    .font-size-lll {
+        font-size: var(--size-llll);
+    }
+    
+    .font-size-llll {
+        font-size: var(--size-lllll);
+    }
+    
+    .font-size-lllll {
+        font-size: var(--size-llllll);
+    }
+}
+
+@media (max-width: 400px) {
+    .font-size-l {
+        font-size: var(--size-lll);
+    }
+    
+    .font-size-ll {
+        font-size: var(--size-llll);
+    }
+    
+    .font-size-lll {
+        font-size: var(--size-lllll);
+    }
+    
+    .font-size-llll {
+        font-size: var(--size-llllll);
+    }
+}

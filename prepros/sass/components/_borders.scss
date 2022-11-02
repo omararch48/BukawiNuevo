@@ -1,21 +1,45 @@
-.bottom.light, .top.light {
+.top.light {
     background-color: var(--base-3);
+    border-bottom:       solid 0.1rem var(--base-3);
 }
 
-.bottom.dark, .top.dark {
+.top.dark {
     background-color: var(--base-4);
+    border-bottom:       solid 0.1rem var(--base-4);
 }
 
 .top {
-    // background-color: var(--base-4);
-    clip-path: polygon(0 70%, 0% 100%, 100% 100%);
     height: 100vh;
     width: 100%;
 }
 
+.bottom.light {
+    background-color: var(--base-3);
+    border-top:       solid 0.1rem var(--base-3);
+}
+
+.bottom.dark {
+    background-color: var(--base-4);
+    border-top:       solid 0.1rem var(--base-4);
+}
+
 .bottom {
-    // background-color: var(--base-4);
-    clip-path: polygon(100% 0, 0 0, 100% 60%);
     height: 50vh;
     width: 100%;
+}
+
+.top.right {
+    clip-path: polygon(0 70%, 100% 100%, 0 100%);
+}
+
+.bottom.right {
+    clip-path: polygon(100% 0, 0 0, 100% 60%);
+}
+
+.top.left {
+    clip-path: polygon(0 100%, 100% 70%, 100% 100%);
+}
+
+.bottom.left {
+    clip-path: polygon(0 0, 0 60%, 100% 0);
 }

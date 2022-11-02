@@ -1,0 +1,15 @@
+.contact-section {
+    align-items:      center;
+    background-color: var(--base-3);
+    display:          flex;
+    flex-direction:   column;
+    justify-content:  center;
+    margin:           0;
+    padding:          0 1rem;
+
+    h3 {
+        color:     var(--main-white);
+        font-size: 3.6rem;
+        padding:   2rem;
+    }
+}
