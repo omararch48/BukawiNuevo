@@ -9,8 +9,6 @@ block Main
     main#contact
         +MainTitle("Contacto")
         section.top.left.light
-
-
         section.contact-section
             h3 Envíanos un mensaje
             form(data-aos="zoom-out-down").form
@@ -47,102 +45,56 @@ block Main
                             h3 Instagram
                             p Visitanos en Instagram
                             a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
-
-                
-                <div class="flip-card" data-aos="flip-right" data-aos-once="true">
-                    <div class="linkedin-background border-radius-2rem flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Linkedin</h3>
-                            <p>
-                                Visitanos en Linkedin
-                            </p>
-                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" data-aos="flip-left" data-aos-once="true">
-                    <div class="tiktok-background border-radius-2rem flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Tik tok</h3>
-                            <p>
-                                Ve nuestros bailes en Tiktok
-                            </p>
-                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" data-aos="flip-right" data-aos-once="true">
-                    <div class="twitter-background border-radius-2rem flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Twitter</h3>
-                            <p>
-                                Siguenos en Twitter
-                            </p>
-                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card" data-aos="flip-left" data-aos-once="true">
-                    <div class="pinterest-background border-radius-2rem flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fa-brands fa-pinterest"></i>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Pinterest</h3>
-                            <p>
-                                No sabemos que es pinterest, pero siguenos
-                            </p>
-                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card"  data-aos="flip-right" data-aos-once="true">
-                    <div class="facebook-background border-radius-2rem flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Facebook</h3>
-                            <p>
-                                Unete a nuestro grupo de Facebook
-                            </p>
-                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card"  data-aos="flip-left" data-aos-once="true">
-                    <div class="whatsapp-background border-radius-2rem flip-card-inner">
-                        <div class="flip-card-front">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>WhatsApp</h3>
-                            <p>
-                                Envianos un mensaje por WhatsApp
-                            </p>
-                            <a href="#" target="_blank" class="clear-link color-white color-gray-hover">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
+                div(data-aos="flip-right", data-aos-once="true").flip-card
+                    .linkedin-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-linkedin
+                        .flip-card-back
+                            h3 Linkedin
+                            p Visitanos en Linkedin
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
+                div(data-aos="flip-left", data-aos-once="true").flip-card
+                    .tiktok-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-tiktok
+                        .flip-card-back
+                            h3 TikTok
+                            p Ve nuestros bailes en Tiktok
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
+                div(data-aos="flip-right", data-aos-once="true").flip-card
+                    .twitter-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-twitter
+                        .flip-card-back
+                            h3 Twitter
+                            p Siguenos en Twitter
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
+                div(data-aos="flip-left", data-aos-once="true").flip-card
+                    .pinterest-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-pinterest
+                        .flip-card-back
+                            h3 Pinterest
+                            p No sabemos que es pinterest, pero siguenos
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
+                div(data-aos="flip-right", data-aos-once="true").flip-card
+                    .facebook-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-facebook
+                        .flip-card-back
+                            h3 Pinterest
+                            p Unete a nuestro grupo de Facebook
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
+                div(data-aos="flip-left", data-aos-once="true").flip-card
+                    .whatsapp-background.border-radius-2rem.flip-card-inner
+                        .flip-card-front
+                            i.fa-brands.fa-whatsapp
+                        .flip-card-back
+                            h3 WhatsApp
+                            p Envianos un mensaje por WhatsApp
+                            a(href="#", target="_blank").clear-link.color-white.color-gray-hover Ver más
         section.bottom.left.light
+
 
 block Footer                
     +Footer("")(class="footer-top--left dark")
