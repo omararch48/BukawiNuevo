@@ -21,4 +21,6 @@ appFooter();
 if (pageName.id == 'index') {
     appSlider();
     appTestimonials();
+} else if (pageName.id == 'testimonials') {
+    appSlider();
 }

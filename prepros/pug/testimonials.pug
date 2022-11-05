@@ -8,10 +8,30 @@ block Title
 block Main
     main#testimonials
         +MainTitle("Testimonios")
+        include components/indexComponents/slider.pug
         section.top.left.light
         section.section-testimonials
-        section.section-testimonials
-        section.section-testimonials
+            .testimonials__container 
+                .testimonial 
+                    .testimonials__info 
+                        .testimonial__photo
+                            img(src="img/jpg/hero-1.jpg", alt="Bukawi Testimonial")
+                        .testimonial__text
+                            .testimonial__head
+                                h3 Maria Lopez 
+                                .testimonial__stars
+                                    i.fa-solid.fa-star.star
+                                    i.fa-solid.fa-star.star
+                                    i.fa-solid.fa-star.star
+                                    i.fa-solid.fa-star.star
+                                    i.fa-solid.fa-star
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta, laboriosam laudantium ipsum. 
+                    .testimonial__images
+                        +Slider([['img/jpeg/WhatsApp Image 2022-06-21 at 5.12.26 PM.jpeg'], ['Slider 1', 'Llamanos para asesorarte en la eleccion de tu prodcuto'], ['img/jpeg/WhatsApp Image 2022-06-21 at 5.12.36 PM.jpeg']])
+
+
+
+
         section.bottom.left.light
 
 block Footer                

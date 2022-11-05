@@ -1,0 +1,16 @@
+.section-testimonials {
+    align-items:      center;
+    background-color: var(--base-3);
+    display:          flex;
+    justify-content:  center;
+    padding: 2rem;
+    width: 100%;
+
+    .testimonials__container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: max(96%, 140rem);
+    }
+}

@@ -1,6 +1,10 @@
 .section-productos {
     background-color: var(--base-4);
     width:            100%;
+
+    h3 {
+        padding-top: 0.4rem;
+    }
 }
 
 .products-container {
