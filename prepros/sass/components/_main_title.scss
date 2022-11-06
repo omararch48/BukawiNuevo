@@ -31,7 +31,7 @@
     }   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     .main-title {
         h1 {
             font-size: 8rem;
@@ -39,10 +39,26 @@
     }   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 560px) {
     .main-title {
         h1 {
             font-size: 6rem;
+        }
+    }   
+}
+
+@media (max-width: 440px) {
+    .main-title {
+        h1 {
+            font-size: 4rem;
+        }
+    }   
+}
+
+@media (max-width: 320px) {
+    .main-title {
+        h1 {
+            font-size: 3.2rem;
         }
     }   
 }

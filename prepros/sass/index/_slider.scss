@@ -105,32 +105,12 @@
             left:  0;
             top:   calc(50vh - 35%);
             width: 100%;
-    
-            .slider {
-                .slide {
-                    img {
-                    }
-                }
-                .slide.slide-text {
-                    .slide-information {
-                    }                
-                }
-            }
         }
     
         .slider-buttons-container {
             bottom: calc(50vh - 35%);
             left:   0;
             width:  100%;
-
-            .slider-buttons {
-                .slider__button {
-                }
-                .slider__button:hover {
-                }
-                .slider__button.slider__button--selected {
-                }
-            }
         }
     }
 }
@@ -140,17 +120,6 @@
         .slider-container {
             height: 86%;
             top:    calc(50vh - 43%);
-    
-            .slider {
-                .slide {
-                    img {
-                    }
-                }
-                .slide.slide-text {
-                    .slide-information {
-                    }                
-                }
-            }
         }
     
         .slider-buttons-container {
