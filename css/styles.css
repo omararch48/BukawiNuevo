@@ -2030,6 +2030,12 @@ header .header__container .header__budget a button {
     width: 28rem;
   }
 }
+.section-budget {
+  background-color: var(--base-4);
+  padding: 2rem 0;
+  width: 100%;
+}
+
 .top.light {
   background-color: var(--base-3);
   border-bottom: solid 0.1rem var(--base-3);

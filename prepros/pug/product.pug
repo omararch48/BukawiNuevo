@@ -1,0 +1,19 @@
+extend templates/base.pug
+
+
+block Title 
+    +Title("Producto")
+
+
+block Main
+    main#product
+        +MainTitle("Producto")
+        section.top.left.light
+        section.section-productos
+            .product-container
+                
+        section.bottom.left.light
+
+
+block Footer                
+    +Footer("")(class="footer-top--left dark")

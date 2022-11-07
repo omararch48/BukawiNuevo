@@ -1,0 +1,37 @@
+extend templates/base.pug
+
+
+block Title 
+    +Title("Productos")
+
+
+block Main
+    main#budget
+        +MainTitle("Presupuesto")
+        section.top.right.dark
+        section.section-budget
+            form(data-aos="zoom-out-down").form
+                .form__container
+                    .form-legend-container
+                        legend.form-legend Los campos consideran un promedio estimado
+                    .form__group
+                        input(type="number" id="shower", placeholder=" ").form__input
+                        label(for="shower").form__label Número de duchas diarias:
+                        span.form__line
+                    .form__group
+                        input(type="number", id="time", placeholder=" ").form__input
+                        label(for="time").form__label Duración promedio de las duchas:
+                        span.form__line
+                    .form__group
+                        select(id="temperature").form__input
+                            option Muy caliente
+                            option Caliente
+                            option Tibia
+                            option Ligeramente fria
+                        label(for="temperature").form__label Temperatura de las duchas:
+                button.submit-form.color-white.color-gray-hover Calcular
+        section.bottom.right.dark
+
+
+block Footer                
+    +Footer("")(class="footer-top--right light")
