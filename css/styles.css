@@ -572,11 +572,11 @@ footer.light .footer__container .footer__end span {
   transition: all ease-in-out 1s;
 }
 
-.section-productos {
+.section-products {
   background-color: var(--base-4);
   width: 100%;
 }
-.section-productos h3 {
+.section-products h3 {
   padding-top: 0.4rem;
 }
 
@@ -682,6 +682,16 @@ footer.light .footer__container .footer__end span {
     width: 28rem;
   }
 }
+.section-product {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--base-3);
+  padding: 2rem;
+  max-width: 140rem;
+  width: 100%;
+}
+
 /************************************************************/
 /************************* Sections *************************/
 /************************************************************/
@@ -713,141 +723,6 @@ main#index {
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
 }
 
-/**********************************************************/
-/************************* Header *************************/
-/**********************************************************/
-header {
-  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  display: flex;
-  height: 60rem;
-  justify-content: center;
-  margin-top: 10rem;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-}
-header .header__container:hover {
-  background-color: var(--dark-blue-transparent);
-}
-header .header__container:hover .header__budget h3 {
-  color: var(--main-white);
-}
-header .header__container:hover .header__budget p {
-  color: var(--main-white);
-}
-header .header__container:hover .header__budget a button {
-  background-color: var(--main-light-green);
-  transition: all ease-in-out 0.6s;
-}
-header .header__container:hover .header__budget a:hover button {
-  background-color: var(--main-dark-green);
-  border: solid 0.2rem var(--main-gray);
-  color: var(--main-gray);
-  cursor: pointer;
-}
-header .header__container {
-  align-items: center;
-  background-color: var(--white-transparent);
-  backdrop-filter: blur(30px);
-  border: solid 0.2rem var(--main-white);
-  border-radius: 2rem;
-  display: flex;
-  height: 40rem;
-  justify-content: center;
-  transition: all ease-in-out 0.6s;
-  width: 80%;
-}
-header .header__container .header__image {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 50%;
-}
-header .header__container .header__image img {
-  width: 90%;
-}
-header .header__container .header__budget {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  padding: 1rem;
-  width: 50%;
-}
-header .header__container .header__budget h3 {
-  color: var(--main-dark-green);
-  font-size: 3.2rem;
-  font-weight: bolder;
-  text-align: center;
-  transition: all ease-in-out 0.6s;
-  width: 100%;
-}
-header .header__container .header__budget p {
-  color: var(--main-dark-green);
-  font-size: 2rem;
-  text-align: center;
-  transition: all ease-in-out 0.6s;
-  width: 80%;
-}
-header .header__container .header__budget a button {
-  background-color: var(--main-dark-blue);
-  border: solid 0.2rem var(--main-white);
-  color: var(--main-white);
-  border-radius: 1rem;
-  margin-top: 2rem;
-  padding: 2rem;
-  transition: all ease-in-out 0.6s;
-}
-
-@media (max-width: 800px) {
-  header {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
-  }
-  header .header__container:hover {
-    background-color: transparent;
-  }
-  header .header__container:hover .header__budget {
-    background-color: var(--dark-blue-transparent);
-  }
-  header .header__container {
-    backdrop-filter: blur(6px);
-    background-color: transparent;
-    height: 42rem;
-    width: 90%;
-  }
-  header .header__container .header__image {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-  header .header__container .header__image img {
-    width: 80%;
-  }
-  header .header__container .header__budget {
-    backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.3);
-    bottom: 0;
-    border-radius: 2rem;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: all ease-in-out 0.6s;
-    width: 100%;
-  }
-}
 /****************************************************************/
 /************************* Testimonials *************************/
 /****************************************************************/
@@ -987,9 +862,148 @@ header .header__container .header__budget a button {
     transform: scale(0.9);
   }
 }
+/**********************************************************/
+/************************* Header *************************/
+/**********************************************************/
+header {
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  display: flex;
+  height: 60rem;
+  justify-content: center;
+  margin-top: 10rem;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+header .header__container:hover {
+  background-color: var(--dark-blue-transparent);
+}
+header .header__container:hover .header__budget h3 {
+  color: var(--main-white);
+}
+header .header__container:hover .header__budget p {
+  color: var(--main-white);
+}
+header .header__container:hover .header__budget a button {
+  background-color: var(--main-light-green);
+  transition: all ease-in-out 0.6s;
+}
+header .header__container:hover .header__budget a:hover button {
+  background-color: var(--main-dark-green);
+  border: solid 0.2rem var(--main-gray);
+  color: var(--main-gray);
+  cursor: pointer;
+}
+header .header__container {
+  align-items: center;
+  background-color: var(--white-transparent);
+  backdrop-filter: blur(30px);
+  border: solid 0.2rem var(--main-white);
+  border-radius: 2rem;
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  width: 80%;
+}
+header .header__container .header__image {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+header .header__container .header__image img {
+  width: 90%;
+}
+header .header__container .header__budget {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 1rem;
+  width: 50%;
+}
+header .header__container .header__budget h3 {
+  color: var(--main-dark-green);
+  font-size: 3.2rem;
+  font-weight: bolder;
+  text-align: center;
+  transition: all ease-in-out 0.6s;
+  width: 100%;
+}
+header .header__container .header__budget p {
+  color: var(--main-dark-green);
+  font-size: 2rem;
+  text-align: center;
+  transition: all ease-in-out 0.6s;
+  width: 80%;
+}
+header .header__container .header__budget a button {
+  background-color: var(--main-dark-blue);
+  border: solid 0.2rem var(--main-white);
+  color: var(--main-white);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  transition: all ease-in-out 0.6s;
+}
+
+@media (max-width: 800px) {
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+  }
+  header .header__container:hover {
+    background-color: transparent;
+  }
+  header .header__container:hover .header__budget {
+    background-color: var(--dark-blue-transparent);
+  }
+  header .header__container {
+    backdrop-filter: blur(6px);
+    background-color: transparent;
+    height: 42rem;
+    width: 90%;
+  }
+  header .header__container .header__image {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  header .header__container .header__image img {
+    width: 80%;
+  }
+  header .header__container .header__budget {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    border-radius: 2rem;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all ease-in-out 0.6s;
+    width: 100%;
+  }
+}
 /************************************************************/
 /************************* Products *************************/
 /************************************************************/
+#products {
+  position: relative;
+}
+
 .products {
   align-items: center;
   display: flex;
@@ -1395,6 +1409,141 @@ header .header__container .header__budget a button {
   }
   .section-slider .slider-buttons-container .slider-buttons .slider__button.slider__button--selected {
     border: solid 0.15rem var(--button-white);
+  }
+}
+/****************************************************************/
+/************************* Presentation *************************/
+/****************************************************************/
+.presentation {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin-top: 6.5rem;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.presentation .presentation__container:hover {
+  background-color: var(--dark-blue-transparent);
+}
+.presentation .presentation__container:hover .presentation__budget h3 {
+  color: var(--main-white);
+}
+.presentation .presentation__container:hover .presentation__budget p {
+  color: var(--main-white);
+}
+.presentation .presentation__container:hover .presentation__budget a button {
+  background-color: var(--main-light-green);
+  transition: all ease-in-out 0.6s;
+}
+.presentation .presentation__container:hover .presentation__budget a:hover button {
+  background-color: var(--main-dark-green);
+  border: solid 0.2rem var(--main-gray);
+  color: var(--main-gray);
+  cursor: pointer;
+}
+.presentation .presentation__container {
+  align-items: center;
+  background-color: var(--white-transparent);
+  backdrop-filter: blur(30px);
+  border: solid 0.2rem var(--main-white);
+  border-radius: 2rem;
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  width: 80%;
+}
+.presentation .presentation__container .presentation__image {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+.presentation .presentation__container .presentation__image img {
+  width: 90%;
+}
+.presentation .presentation__container .presentation__budget {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 1rem;
+  width: 50%;
+}
+.presentation .presentation__container .presentation__budget h3 {
+  color: var(--main-dark-green);
+  font-size: 3.2rem;
+  font-weight: bolder;
+  text-align: center;
+  transition: all ease-in-out 0.6s;
+  width: 100%;
+}
+.presentation .presentation__container .presentation__budget p {
+  color: var(--main-dark-green);
+  font-size: 2rem;
+  text-align: center;
+  transition: all ease-in-out 0.6s;
+  width: 80%;
+}
+.presentation .presentation__container .presentation__budget a button {
+  background-color: var(--main-dark-blue);
+  border: solid 0.2rem var(--main-white);
+  color: var(--main-white);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  transition: all ease-in-out 0.6s;
+}
+
+@media (max-width: 800px) {
+  .presentation {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  .presentation .presentation__container:hover {
+    background-color: transparent;
+  }
+  .presentation .presentation__container:hover .presentation__budget {
+    background-color: var(--dark-blue-transparent);
+  }
+  .presentation .presentation__container {
+    backdrop-filter: blur(6px);
+    background-color: transparent;
+    height: 42rem;
+    width: 90%;
+  }
+  .presentation .presentation__container .presentation__image {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .presentation .presentation__container .presentation__image img {
+    width: 80%;
+  }
+  .presentation .presentation__container .presentation__budget {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    border-radius: 2rem;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all ease-in-out 0.6s;
+    width: 100%;
   }
 }
 .section-us {
@@ -2089,45 +2238,164 @@ header .header__container .header__budget a button {
   height: 100vh;
   justify-content: center;
   position: absolute;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 10;
 }
-.main-title h1 {
-  color: var(--main-light-blue);
+.main-title a:hover {
+  background-color: var(--dark-blue-transparent);
+  transition: all ease-in-out 0.6s;
+}
+.main-title a:hover h1 {
+  color: var(--main-white);
+}
+.main-title a {
+  background-color: var(--white-transparent);
+  transition: all ease-in-out 0.6s;
+  border-radius: 2rem;
+  border: solid 0.2rem var(--main-white);
+  text-decoration: none;
+}
+.main-title a h1 {
+  color: var(--main-dark-green);
   font-size: 12rem;
   margin: 0 2rem;
   padding: 2rem;
   transition: all ease-in-out 0.6s;
 }
-.main-title h1:hover {
-  color: var(--main-dark-blue);
-  text-shadow: 0 0.4rem 0.6rem var(--main-yellow);
-}
 
 @media (max-width: 800px) {
-  .main-title h1 {
+  .main-title a h1 {
     font-size: 10rem;
   }
 }
 @media (max-width: 680px) {
-  .main-title h1 {
+  .main-title a h1 {
     font-size: 8rem;
   }
 }
 @media (max-width: 560px) {
-  .main-title h1 {
+  .main-title a h1 {
     font-size: 6rem;
   }
 }
 @media (max-width: 440px) {
-  .main-title h1 {
+  .main-title a h1 {
     font-size: 4rem;
   }
 }
 @media (max-width: 320px) {
-  .main-title h1 {
+  .main-title a h1 {
     font-size: 3.2rem;
+  }
+}
+.product-title {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.product-title .product-title__container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.product-title .product-title__container .product-title__image {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.product-title .product-title__container .product-title__image img {
+  border: solid 0.5rem var(--main-white);
+  border-radius: 50%;
+  height: 60rem;
+  margin-top: 20rem;
+  object-fit: cover;
+  width: 60rem;
+}
+.product-title .product-title__container .product-title__title {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.product-title .product-title__container .product-title__title .product-title__name:hover {
+  opacity: 1;
+}
+.product-title .product-title__container .product-title__title .product-title__name {
+  align-items: center;
+  background-color: var(--dark-blue-transparent);
+  border: solid 0.5rem var(--main-white);
+  border-radius: 50%;
+  display: flex;
+  height: 60rem;
+  justify-content: center;
+  margin-top: 20rem;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+  width: 60rem;
+}
+.product-title .product-title__container .product-title__title .product-title__name h1 {
+  color: var(--main-white);
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .product-title .product-title__container .product-title__image img {
+    height: 48rem;
+    width: 48rem;
+  }
+  .product-title .product-title__container .product-title__title .product-title__name {
+    height: 48rem;
+    width: 48rem;
+  }
+}
+@media (max-width: 580px) {
+  .product-title .product-title__container .product-title__image img {
+    height: 38rem;
+    margin-top: 10rem;
+    width: 38rem;
+  }
+  .product-title .product-title__container .product-title__title .product-title__name {
+    height: 38rem;
+    margin-top: 10rem;
+    width: 38rem;
+  }
+}
+@media (max-width: 440px) {
+  .product-title .product-title__container .product-title__image img {
+    height: 30rem;
+    width: 30rem;
+  }
+  .product-title .product-title__container .product-title__title .product-title__name {
+    height: 30rem;
+    width: 30rem;
+  }
+  .product-title .product-title__container .product-title__title .product-title__name h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .product-title .product-title__container .product-title__image img {
+    height: 28rem;
+    width: 28rem;
+  }
+  .product-title .product-title__container .product-title__title .product-title__name {
+    height: 28rem;
+    width: 28rem;
   }
 }
 

@@ -11,11 +11,12 @@
 @import 'products/product';
 // Index
 @import 'index/section';
-@import 'index/header';
 @import 'index/testimonials';
+@import 'index/header';
 @import 'index/products';
 @import 'index/text';
 @import 'index/slider';
+@import 'index/presentation';
 // Us
 @import 'us/section_us';
 // Contact
@@ -32,3 +33,4 @@
 // Components
 @import 'components/borders';
 @import 'components/main_title';
+@import 'components/product_title';

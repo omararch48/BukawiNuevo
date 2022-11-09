@@ -1,64 +1,88 @@
 .main-title {
-    align-items: center;
+    align-items:      center;
     background-color: transparent;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+    display:          flex;
+    height:           100vh;
+    justify-content:  center;
+    position:         absolute;
+    text-align:       center;
+    top:              0;
+    width:            100%;
+    z-index:          10;
 
-    h1 {
-        color: var(--main-light-blue);
-        font-size: 12rem;
-        margin: 0 2rem;
-        padding: 2rem;
-        transition: all ease-in-out 0.6s;
+    a:hover {
+        background-color: var(--dark-blue-transparent);
+        transition:       all ease-in-out 0.6s;
+
+        h1 {
+            color:      var(--main-white);
+        }
     }
-    
-    h1:hover {
-        color: var(--main-dark-blue);
-        text-shadow: 0 0.4rem 0.6rem var(--main-yellow);
+
+    a {
+        background-color: var(--white-transparent);
+        transition:       all ease-in-out 0.6s;
+        border-radius: 2rem;
+        border: solid 0.2rem var(--main-white);
+        text-decoration: none;
+
+        h1 {
+            color:      var(--main-dark-green);
+            font-size:  12rem;
+            margin:     0 2rem;
+            padding:    2rem;
+            transition: all ease-in-out 0.6s;
+        }
     }
+
 }
 
 @media (max-width: 800px) {
     .main-title {
-        h1 {
-            font-size: 10rem;
+        a {
+            h1 {
+                font-size: 10rem;
+            }
         }
     }   
 }
 
 @media (max-width: 680px) {
     .main-title {
-        h1 {
-            font-size: 8rem;
+        a {
+            h1 {
+                font-size: 8rem;
+            }
         }
     }   
 }
 
 @media (max-width: 560px) {
     .main-title {
-        h1 {
-            font-size: 6rem;
+        a {
+            h1 {
+                font-size: 6rem;
+            }
         }
     }   
 }
 
 @media (max-width: 440px) {
     .main-title {
-        h1 {
-            font-size: 4rem;
+        a {
+            h1 {
+                font-size: 4rem;
+            }
         }
     }   
 }
 
 @media (max-width: 320px) {
     .main-title {
-        h1 {
-            font-size: 3.2rem;
+        a {
+            h1 {
+                font-size: 3.2rem;
+            }
         }
     }   
 }

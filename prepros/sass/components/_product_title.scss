@@ -1,0 +1,155 @@
+.product-title {
+    height:   100vh;
+    position: absolute;
+    width:    100%;
+    z-index:  10;
+    
+    .product-title__container {
+        align-items:     center;
+        display:         flex;
+        height:          100vh;
+        justify-content: center;
+        position:        relative;
+        width:           100%;
+        
+        .product-title__image {
+            align-items:     center;
+            display:         flex;
+            height:          100vh;
+            justify-content: center;
+            position:        absolute;
+            top:             0;
+            width:           100%;
+
+            img{
+                border:        solid 0.5rem var(--main-white);
+                border-radius: 50%;
+                height:        60rem;
+                margin-top:    20rem;
+                object-fit:    cover;
+                width:         60rem;
+            }
+        }
+
+        .product-title__title {
+            align-items:     center;
+            display:         flex;
+            height:          100vh;
+            justify-content: center;
+            position:        absolute;
+            top:             0;
+            width:           100%;
+
+            .product-title__name:hover {
+                opacity: 1;
+            }
+
+            .product-title__name {
+                align-items:        center;
+                background-color:   var(--dark-blue-transparent);
+                border:             solid 0.5rem var(--main-white);
+                border-radius:      50%;
+                display:            flex;
+                height:             60rem;
+                justify-content:    center;
+                margin-top:         20rem;
+                object-fit:         cover;
+                opacity:            0;
+                transition:         opacity ease-in-out 0.4s;
+                width:              60rem;
+
+                h1 {
+                    color:      var(--main-white);
+                    padding:    0 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .product-title {
+        .product-title__container {
+            .product-title__image {
+                img{
+                    height:        48rem;
+                    width:         48rem;
+                }
+            }
+    
+            .product-title__title {
+                .product-title__name {
+                    height:             48rem;
+                    width:              48rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .product-title {
+        .product-title__container {
+            .product-title__image {
+                img{
+                    height:     38rem;
+                    margin-top: 10rem;
+                    width:      38rem;
+                }
+            }
+            
+            .product-title__title {
+                .product-title__name {
+                    height:     38rem;
+                    margin-top: 10rem;
+                    width:       38rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .product-title {
+        .product-title__container {
+            .product-title__image {
+                img{
+                    height: 30rem;
+                    width:  30rem;
+                }
+            }
+    
+            .product-title__title {
+                .product-title__name {
+                    height: 30rem;
+                    width:  30rem;
+    
+                    h1 {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .product-title {
+        .product-title__container {
+            .product-title__image {
+                img{
+                    height: 28rem;
+                    width:  28rem;
+                }
+            }
+    
+            .product-title__title {
+                .product-title__name {
+                    height: 28rem;
+                    width:  28rem;
+                }
+            }
+        }
+    }
+}
